@@ -102,11 +102,13 @@ form input[type=text] {
     border-radius: 20px;
     border: 2px solid #d0d0d0;
     width: 300px;
+    background-color: #e6e6e6;
 }
 
 #message:focus {
     border: 2px solid #4387ea66;
     outline: none;
+    background-color: white;
 }
 
 input::-webkit-input-placeholder {
