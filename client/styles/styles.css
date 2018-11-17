@@ -142,6 +142,13 @@ select {
     cursor: pointer;
 }
 
+#refreshButton {
+    position: relative;
+    top: -40px;
+    left: 450px;
+    border-radius: 50px
+}
+
 #submitButton {
     padding: 5px 10px;
     font-family: 'Lato';
