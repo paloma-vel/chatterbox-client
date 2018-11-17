@@ -16,12 +16,13 @@ var Friends = {
   },
   
   addFriendClass: () => {
+    $('.chat').removeClass('friend');
     for (var i = 0; i < Friends.friendList.length; i++) {
       var currentFriendUsername = Friends.friendList[i];
-      // if a chat item contains the username
-      // add friend class
+      $('.username').filter(function() {
+        return $.trim($(this).text()) === currentFriendUsername;
+      }).parent().addClass('friend');
     }
-    MessagesView.render();
   },
   
   friendList: []

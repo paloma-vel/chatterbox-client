@@ -36,15 +36,6 @@ var MessagesView = {
   render: function() {
     for (var i = 0; i < Messages.messages.length; i++) {
       MessageView.renderMessage(Messages.messages[i]);
-      // var username = Messages.messages[i].username;
-      // if (Friends.includesUsername(username)) {
-      //   // attach a friend class
-      //   console.log($('.username').innerText);
-      //   // select friend elements: class='username' && innerText = element in friends array
-      //   // if ($('.username').innerText)
-      //   // & add .friend class to each 
-      //   // Messages.messages[i].addClass('friend');
-      // }
     }
   }
 
