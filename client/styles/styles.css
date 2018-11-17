@@ -79,6 +79,11 @@ form input[type=text] {
     font-family: 'Permanent Marker', cursive;
 }
 
+.chat .username:hover {
+    color: blue;
+    cursor: pointer;
+}
+
 .chat:hover {
     background-color: #4387eab5;
 }

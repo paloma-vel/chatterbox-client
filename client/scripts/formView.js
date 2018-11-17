@@ -8,7 +8,7 @@ var FormView = {
 
   handleSubmit: function(event) {
     // Stop the browser from submitting the form
-    // event.preventDefault();
+    event.preventDefault();
     var username = App.username;
     var text = $('#message').val();
     var message = {

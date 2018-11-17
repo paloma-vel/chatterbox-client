@@ -1,6 +1,6 @@
 var MessageView = {
 
-  render: (message) => {
+  renderMessage: (message) => {
     if (message.username && message.text) {
       var template = _.template(`
         <div class="chat">
@@ -9,6 +9,9 @@ var MessageView = {
         </div>
       `);
       $('#chats').append(template(message));
+      // $('.username').on('click', function(event) {
+      //   Friends.toggleStatus(event.target.innerText);
+      // });
     }
   }
 
