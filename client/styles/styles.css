@@ -1,5 +1,5 @@
 body {
-    background: #eee;
+    background: #969292;
     text-align: center;
     padding: 0 25px;
     font-family: arial, sans-serif;
@@ -9,21 +9,29 @@ body {
     width: 500px;
     margin: auto;
     text-align: left;
-    background: white;
-    padding: 50px 60px;
+    background: whitesmoke;
+    padding: 40px 60px 10px 60px;
     border: solid #ddd;
     border-width: 0 1px 1px 1px;
+    font-family: 'Lato', sans-serif;
+}
+
+#chats {
+    padding-bottom: 30px;
 }
 
 #main h1 {
     margin-top: 0;
-    font-size: 35px;
+    font-size: 40px;
     margin-bottom: 5px;
-    padding: 5px;
+    padding: 0px;
+    font-family: 'Kaushan Script', cursive;
+    color: #4387eae8;
 }
 
-#main h1 span {
-    font-style:italic;
+#rooms {
+    font-family: lato;
+    color: #4387eae8
 }
 
 #main ul {
@@ -49,7 +57,7 @@ body {
 form {
     padding: 20px;
     padding-left: 0;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 form input[type=text] {
@@ -60,17 +68,19 @@ form input[type=text] {
 }
 
 .chat {
-    padding: 5px;
+    padding: 5px 15px 10px 15px;
     margin-bottom: 5px;
-    background-color: #eee;
+    background-color: #4387ea63;
+    font-family: 'Lato', sans-serif;
 }
 
 .chat .username {
     font-weight: 800;
+    font-family: 'Permanent Marker', cursive;
 }
 
 .chat:hover {
-    background-color: #ddd;
+    background-color: #4387eab5;
 }
 
 .spinner {
@@ -86,5 +96,54 @@ form input[type=text] {
 .friend {
     color: #fff;
     background-color: #0090da;
+}
+
+#message {
+    border-radius: 20px;
+    border: 2px solid #d0d0d0;
+    width: 300px;
+}
+
+#message:focus {
+    border: 2px solid #4387ea66;
+    outline: none;
+}
+
+input::-webkit-input-placeholder {
+    color: #4387eab8;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: #4387eab8;
+    opacity: 0.5;
+    font-weight: 100;
+}
+
+select {
+    margin: 0 10px;
+}
+
+.btn {
+    padding: 5px 10px;
+    font-family: 'Lato';
+    border-radius: 10px;
+    background-color: #4387ea3d;
+}
+
+.btn:hover {
+    background-color: #4387ea9c;
+    cursor: pointer;
+}
+
+#submitButton {
+    padding: 5px 10px;
+    font-family: 'Lato';
+    border-radius: 10px;
+    background-color: #4387ea3d;
+}
+
+#submitButton:hover {
+    background-color: #4387ea9c;
+    cursor: pointer;
 }
 
