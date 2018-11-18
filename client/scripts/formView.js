@@ -16,6 +16,8 @@ var FormView = {
       text: text
     };
     Parse.create(message, () => {});
+    MessagesView.initialize();
+    $('#message').val("");
   },
 
   setStatus: function(active) {

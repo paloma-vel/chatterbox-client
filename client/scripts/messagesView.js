@@ -3,6 +3,7 @@ var MessagesView = {
   $chats: $('#chats'),
   
   initialize: function() {
+    $('.chat').remove();
     App.fetch((data) => {
       Messages.messages = data.results;
       MessagesView.render();
