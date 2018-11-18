@@ -15,7 +15,11 @@ var MessagesView = {
   
   render: function() {
     for (var i = 0; i < Messages.messages.length; i++) {
-      MessageView.renderMessage(Messages.messages[i]);
+      var currentMessage = Messages.messages[i];
+      // show only messages in the current room when a room is specified
+      if (currentMessage.roomname === Rooms.currentRoom) {
+        MessageView.renderMessage(currentMessage);
+      }
     }
   }
 

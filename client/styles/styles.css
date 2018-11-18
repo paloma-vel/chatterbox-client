@@ -116,6 +116,21 @@ form input[type=text] {
     background-color: white;
 }
 
+#addRoomText {
+    border-radius: 20px;
+    border: 2px solid #d0d0d0;
+    width: 100px;
+    background-color: #e6e6e6;
+    margin: 0 10px 0 17px;
+}
+
+#addRoomText:focus {
+    border: 2px solid #4387ea66;
+    outline: none;
+    background-color: white;
+}
+
+
 input::-webkit-input-placeholder {
     color: #4387eab8;
 }

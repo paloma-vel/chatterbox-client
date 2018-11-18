@@ -7,7 +7,6 @@ var Friends = {
     } else {
       Friends.friendList.push(username);
     }
-    console.log(Friends.friendList);
     Friends.addFriendClass();
   },
   

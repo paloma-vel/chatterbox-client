@@ -11,9 +11,11 @@ var FormView = {
     event.preventDefault();
     var username = App.username;
     var text = $('#message').val();
+    var roomname = Rooms.currentRoom;
     var message = {
       username: username,
-      text: text
+      text: text,
+      roomname: roomname
     };
     Parse.create(message, () => {});
     MessagesView.initialize();

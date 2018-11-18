@@ -20,7 +20,6 @@ var App = {
 
   fetch: function(callback = ()=>{}) {
     Parse.readAll((data) => {
-      console.log('fetched data: ', data);
       callback(data);
     });
   },

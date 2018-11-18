@@ -9,9 +9,6 @@ var MessageView = {
         </div>
       `);
       $('#chats').append(template(message));
-      // $('.username').on('click', function(event) {
-      //   Friends.toggleStatus(event.target.innerText);
-      // });
     }
   }
 
