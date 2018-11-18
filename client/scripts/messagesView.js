@@ -16,9 +16,14 @@ var MessagesView = {
   render: function() {
     for (var i = 0; i < Messages.messages.length; i++) {
       var currentMessage = Messages.messages[i];
-      // show only messages in the current room when a room is specified
-      if (currentMessage.roomname === Rooms.currentRoom) {
+      // show all messages on page load
+      if (Rooms.currentRoom === '') {
         MessageView.renderMessage(currentMessage);
+      } else {
+        // show only messages in the current room when a room is specified
+        if (currentMessage.roomname === Rooms.currentRoom) {
+          MessageView.renderMessage(currentMessage);
+        }
       }
     }
   }
